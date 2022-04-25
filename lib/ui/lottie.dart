@@ -4,7 +4,9 @@
 
 /// Skia backed Lottie Animation player for Dart.
 ///
-/// To use, import `dart:ui`.
+/// To use, import `dart:ui`
+
+// @dart = 2.12
 part of dart.ui;
 
 class LottieAnimation extends NativeFieldWrapperClass2 {
