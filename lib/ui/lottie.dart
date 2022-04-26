@@ -9,7 +9,7 @@
 // @dart = 2.12
 part of dart.ui;
 
-class LottieAnimation extends NativeFieldWrapperClass1 {
+class LottieAnimation extends NativeFieldWrapperClass2 {
   @pragma('vm:entry-point')
   LottieAnimation(String json) : assert(json != null) {
     _constructor(json);
