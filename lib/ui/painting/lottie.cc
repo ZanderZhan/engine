@@ -24,7 +24,7 @@ FOR_EACH_BINDING(DART_NATIVE_CALLBACK)
 
 void LottieAnimation::RegisterNatives(tonic::DartLibraryNatives* natives) {
   natives->Register(
-      {{"LottieAnimation_constructor", LottieAnimation_constructor, 2, true},
+      {{"LottieAnimation_constructor", LottieAnimation_constructor, 1, true},
        FOR_EACH_BINDING(DART_REGISTER_NATIVE)});
 }
 
