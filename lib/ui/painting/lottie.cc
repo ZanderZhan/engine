@@ -11,6 +11,7 @@
 namespace flutter {
 
 static void LottieAnimation_constructor(Dart_NativeArguments args) {
+  UIDartState::ThrowIfUIOperationsProhibited();
   DartCallConstructor(&LottieAnimation::Create, args);
 }
 
