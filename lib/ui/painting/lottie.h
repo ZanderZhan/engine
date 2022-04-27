@@ -27,7 +27,7 @@ static fml::RefPtr<LottieAnimation> Create(const std::string& data) {
 
   sk_sp<skottie::Animation> animation() { return animation_; }
 
-  void drawFrame(const Canvas* canvas, double progress, double dx, double dy, double height, double width);
+  void drawFrame(const Canvas* canvas, double progress, double height, double width);
 
   double duration();
 

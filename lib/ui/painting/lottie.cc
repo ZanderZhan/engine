@@ -35,8 +35,6 @@ LottieAnimation::~LottieAnimation() {}
 
 void LottieAnimation::drawFrame(const Canvas* canvas,
                                  double progress,
-                                 double dx,
-                                 double dy,
                                  double height,
                                  double width) {
   FML_DCHECK(canvas);
@@ -47,7 +45,6 @@ void LottieAnimation::drawFrame(const Canvas* canvas,
   FML_DCHECK(skia_canvas);
   animation_->seek(progress);
   SkRect bounds = SkRect::MakeWH(width, height);
-  bounds::makeOffset(dx, dy);
   animation_->render(skia_canvas, &bounds);
 }
 
